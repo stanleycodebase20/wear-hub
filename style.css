@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+/* header */
+.header {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #007bff, #ff7f50);
+    color: white;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+/* Prcing Container */
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Pricing Card */
+.pricing-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0.15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Container */
+.image-container {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: transform 0,3s ease;
+}
+
+.pricing-card:hover .image-container img {
+    transform: scale(1.1);
+}
+.cart {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+ table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+ table th, .cart table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.cart-footer {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+/* Card content */
+.pricing-card h3 {
+    font-size: 1.4rem;
+    margin: 10px;
+    color: #007bff;
+}
+
+.pricing-card .description {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 5px 0 15px;
+}
+
+/* Button */
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width:768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+}
+.header p {
+    font-size: 1rem;
+}
+.pricing-card .price {
+    font-size: 1.5rem;
+}
+ 
+
+
